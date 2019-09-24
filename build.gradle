@@ -13,11 +13,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-
 sonarqube {
   properties {
-    property "sonar.projectKey", "siegfried-ehret-sonarsource_sq-com_example_java-gradle-travis"
-    property "sonar.organization", "siegfried-ehret-sonarsource"
-    property "sonar.host.url" "https://sieg.eu.ngrok.io"
+    sonar.projectKey: siegfried-ehret-sonarsource_sq-com_example_java-gradle-travis
+    sonar.organization: siegfried-ehret-sonarsource
+    sonar.host.url: https://sieg.eu.ngrok.io
   }
 }
