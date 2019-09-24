@@ -15,8 +15,8 @@ dependencies {
 
 sonarqube {
   properties {
-    sonar.projectKey: siegfried-ehret-sonarsource_sq-com_example_java-gradle-travis
-    sonar.organization: siegfried-ehret-sonarsource
-    sonar.host.url: https://sieg.eu.ngrok.io
+    property "sonar.projectKey", "siegfried-ehret-sonarsource_sq-com_example_java-gradle-travis"
+    property "sonar.organization", "siegfried-ehret-sonarsource"
+    property "sonar.host.url", "https://sieg.eu.ngrok.io"
   }
 }
