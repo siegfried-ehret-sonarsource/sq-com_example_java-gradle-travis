@@ -1,4 +1,5 @@
 version: 2.1
+
 jobs:
   build:
     docker:
@@ -6,10 +7,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: run-gradle
-          command: ./gradlew sonarqube
+          name: Analyze on SonarCloud
+          command: gradle build sonarqube sonar.projectKey="siegfried-ehret-sonarsource_sq-com_example_java-gradle-travis" sonar.organization="siegfried-ehret-sonarsource" sonar.host.url="https://sieg.eu.ngrok.io"
+
 workflows:
-  version: 2
   main:
     jobs:
       - build:
