@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Analyze on SonarCloud
-          command: gradle build sonarqube -Psonar.projectKey="siegfried-ehret-sonarsource_sq-com_example_java-gradle-travis" -Psonar.organization="siegfried-ehret-sonarsource" -Psonar.host.url="https://sieg.eu.ngrok.io"
+          command: gradle build sonarqube -Dsonar.projectKey="siegfried-ehret-sonarsource_sq-com_example_java-gradle-travis" -Dsonar.organization="siegfried-ehret-sonarsource" -Dsonar.host.url="https://sieg.eu.ngrok.io"
 
 workflows:
   main:
